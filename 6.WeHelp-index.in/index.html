@@ -1,0 +1,109 @@
+ <!doctype html>
+ <html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>拜託讓我錄取WeHolp轉職計畫</title>
+        <link rel="stylesheet"type="text/CSS" href="wecss.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    </head>
+    <body>
+    <div class="q2">
+    第六屆 WeHelp 軟體工程師轉職計畫
+    </div>
+        <div class="q12">
+            <span class="q1" onclick="changeToExps();" >學經歷</span>
+            <span class="q1" onclick="changeToAbout();">關於我</span>
+            <span class="q1" onclick="changeToPlant();">申請動機,生涯規劃</span>
+            <span class="q1" onclick="changeToDeve()">開發申請表心得</span>
+        </div>
+    <hr size="5px" color="black" />
+
+<div id="exps" style="margin-top: 30px; ">
+<div class="q3">大學期間</div>
+我畢業於真理大學工業工程管理。在學期間，校方不斷倡導多元學習及職能培訓的課程，因此其學生崖可謂「滿載而歸」。
+在多元學習方面，除本系必修課程以外，另選行銷管理作為雙主修，奠定「工程」、「管理」、「應用」及「推廣」
+的知識邏輯；職能培訓方面，我則參與系學會運作，不僅培養與人進退的溝通能力，甚在通識教育課程中瞭解產業界動態，
+作為屆將投入社會的底蘊。
+<div class="q3">加拿大期間</div>
+退伍後在家庭的鼓勵下去了加拿大工作2年。個人深知，所謂「時過而學，勤苦難成」的道理，也誠其所云，
+冀於心有餘力之時，能到國外開拓視野，充分地用異鄉生活補足學習之不足。首先，在ＲＯＯＴＳ擔任銷售店員，
+除訓練語言能力，也因過去修習過相關課程，使我在操作上較能得心應手；其次，餐旅服務的工作也使我過去
+在系學會所培養的人際互動觀念更甚精進。異鄉環境總弗若台灣，是以，自我砥礪的精神，更是生活能克竟的關鍵。
+<div class="q3">台灣工作經歷</div>
+對於醫療器材有相當興趣，也熱愛做一位業務員原因除了培養人脈及可學習到
+醫療相關知識及技術所以一回台灣後就朝著醫療業務相關工作著手，有了方向也很
+快的找到了相關工作任職期間負責醫療產品銷售、開發新客戶、售後服務、舉辦各
+醫院產品會議、跟刀，也因勇於學習不管在客戶開發與跟刀上都很快的進入狀況也
+都有不錯的表現（2024目前在職中）。
+</div>
+
+<div id="about" style="display: none; margin-top: 30px;">
+    <div class="q3">家庭狀況</div>
+    我叫湯博任，出生1989年8月6日，來自新北市中產家庭。父親從事金融相關服務；
+    母親從事醫療社會服務；姊姊在國外工作，而我則是家中排行最小。
+    個性隨和且擁有樂觀積極的態度。
+</div>
+<div id="plant" style="display: none;margin-top: 30px;">
+    <div class="q3">申請動機</div>
+目前在醫療產業擔任業務一職已將近9年時間，在這工作上總是一直碰到無法解決得問題如：政治因素...讓我無法順離達成業績
+，也總是在為業績追追趕趕在這種生活中總是沒有感覺到踏實，就是這總感覺讓我萌生了轉職的念頭，也在因緣際會之下看到彭彭
+的YouTube教學影片，在工作的閒暇之餘邊看邊操作，也在操作的過程中找到了踏實的感覺。
+</div>
+<div id="deve" style="display: none;margin-top: 30px;">
+    <div class="q3">開發申請表心得</div>
+這次在12月10日才知道有這個轉職計畫，因目前還在職所以就用了週末假日重複觀看彭彭YouTube教學影片
+（HTML,CSS網頁前端工程1~33集追了三次）...也發現跟著老師操作沒什麼問題（其實這就是問題，因為不知道問題在哪...
+），是到了自己開發的過程才了解到每一步都是問題，但是解決開發過程中遇到的問題讓我很有踏實得感覺，尤其這次點擊切
+換畫面的過程就花了我6個小時...如果這次能順利申請上，會先離開目前工作崗位，全心全意地為轉職工程師做準備。
+這次申請表主要是乾淨整潔,也發現排版對於開發也是很重要的～～
+</div>
+
+
+<script>
+    function changeToAbout(){
+        let expsDiv=document.querySelector("#exps")
+        let aboutDiv=document.querySelector("#about")
+        let plantDiv=document.querySelector("#plant")
+        let deveDiv=document.querySelector("#deve")
+        aboutDiv.style.display="block";
+        expsDiv.style.display="none";
+        plantDiv.style.display="none";
+        deveDiv.style.display="none";
+    }
+    function changeToPlant(){
+        let expsDiv=document.querySelector("#exps")
+        let aboutDiv=document.querySelector("#about")
+        let plantDiv=document.querySelector("#plant")
+        let deveDiv=document.querySelector("#deve")
+        aboutDiv.style.display="none";
+        expsDiv.style.display="none";
+        plantDiv.style.display="block";
+        deveDiv.style.display="none";
+        
+    }
+    function changeToDeve(){      
+        let expsDiv=document.querySelector("#exps")
+        let aboutDiv=document.querySelector("#about")
+        let plantDiv=document.querySelector("#plant")
+        let deveDiv=document.querySelector("#deve")
+        aboutDiv.style.display="none";
+        expsDiv.style.display="none";
+        plantDiv.style.display="none";
+        deveDiv.style.display="block";
+    }
+    function changeToExps(){
+        let expsDiv=document.querySelector("#exps")
+        let aboutDiv=document.querySelector("#about")
+        let plantDiv=document.querySelector("#plant")
+        let deveDiv=document.querySelector("#deve")
+        aboutDiv.style.display="none";
+        expsDiv.style.display="block";
+        plantDiv.style.display="none";
+        deveDiv.style.display="none";
+
+    }
+
+
+</script>
+    </body>
+ </html>
